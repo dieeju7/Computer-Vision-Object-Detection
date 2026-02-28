@@ -1,0 +1,26 @@
+<annotation>
+	<folder>test</folder>
+	<filename>image236.jpg</filename>
+	<path>C:\Users\HP\Downloads\Computer Vision\ex3\banana\images\test\image236.jpg</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>500</width>
+		<height>375</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>banana</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>184</xmin>
+			<ymin>36</ymin>
+			<xmax>333</xmax>
+			<ymax>374</ymax>
+		</bndbox>
+	</object>
+</annotation>

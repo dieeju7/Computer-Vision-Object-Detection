@@ -1,0 +1,26 @@
+<annotation>
+	<folder>train</folder>
+	<filename>image155.jpg</filename>
+	<path>C:\Users\HP\Downloads\Computer Vision\ex3\banana\images\train\image155.jpg</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>197</width>
+		<height>255</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>banana</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>17</xmin>
+			<ymin>91</ymin>
+			<xmax>183</xmax>
+			<ymax>223</ymax>
+		</bndbox>
+	</object>
+</annotation>
