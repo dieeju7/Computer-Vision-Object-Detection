@@ -74,7 +74,8 @@ These results align with theoretical expectations:
 Green boxes represent ground truth annotations.  
 Red boxes represent model predictions.
 
-(You may insert example images here.)
+<img width="520" height="528" alt="image" src="https://github.com/user-attachments/assets/1b691107-c912-4a0f-9aa9-71c1a1e19c77" />
+
 
 ---
 
