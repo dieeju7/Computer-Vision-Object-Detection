@@ -8,15 +8,15 @@ The goal is to analyze the trade-off between detection accuracy and inference sp
 
 ---
 
-## Dataset
+## Discussion
 
-- 200 manually collected banana images
-- Single object class: **banana**
-- Annotations in **Pascal VOC (XML) format**
-- Images resized to **512×512**
-- Dataset split:
-  - 160 images → Training set
-  - 40 images → Test set
+Faster R-CNN significantly outperformed RetinaNet on this small custom dataset.  
+With a frozen backbone and limited training data, the one-stage detector (RetinaNet) struggled to learn meaningful object representations.
+
+These results align with theoretical expectations:
+
+- **Two-stage detectors** are generally more robust with small datasets.
+- **One-stage detectors** are typically faster but require more data to achieve strong performance.
 
 ---
 
@@ -46,6 +46,17 @@ Models were evaluated using:
 
 Evaluation was performed using `torchmetrics` (MeanAveragePrecision).
 
+
+## Dataset
+
+- 200 manually collected banana images
+- Single object class: **banana**
+- Annotations in **Pascal VOC (XML) format**
+- Images resized to **512×512**
+- Dataset split:
+  - 160 images → Training set
+  - 40 images → Test set
+
 ---
 
 ## Results
@@ -54,18 +65,6 @@ Evaluation was performed using `torchmetrics` (MeanAveragePrecision).
 |--------------|--------|----------|----------------|
 | Faster R-CNN | ~0.6386  | ~0.9201    | Slower         |
 | RetinaNet    | ~0.00  | ~0.00    | Slightly faster|
-
----
-
-## Discussion
-
-Faster R-CNN significantly outperformed RetinaNet on this small custom dataset.  
-With a frozen backbone and limited training data, the one-stage detector (RetinaNet) struggled to learn meaningful object representations.
-
-These results align with theoretical expectations:
-
-- **Two-stage detectors** are generally more robust with small datasets.
-- **One-stage detectors** are typically faster but require more data to achieve strong performance.
 
 ---
 
