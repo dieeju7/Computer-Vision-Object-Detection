@@ -1,4 +1,4 @@
-# Banana Object Detection – Faster R-CNN vs RetinaNet
+# Banana Detection – Faster R-CNN vs RetinaNet
 
 ## Project Overview
 
